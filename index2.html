@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            color: white;
+            font-size: 1.3em;
+        }
+
+        header, footer {
+            display: flex;
+            background-color: #111023;
+            height: 15vh;
+            min-width: 85vw;
+
+        }
+        .container-nav {
+            display: flex;
+        }
+        .container-big { 
+            display: flex;
+        }
+        .container-small {
+            display: flex;
+            height: 100%;
+            flex-flow: wrap;
+        }
+        .container-smaller {
+            display: flex;
+            height: 70vh;
+            min-width: 85vw;
+        }
+        nav {
+            display: flex;
+            background-color: #C22177;
+            height: 100vh;
+            min-width: 15vw;
+        }
+        article {
+            color: black;
+            flex-grow: 4;
+        }
+        aside {
+            background-color:#320388;
+            flex-grow: 1;
+            height: 85vh;
+        }
+        .positioning {
+            padding-top: 2vh;
+            padding-left: 2vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-big">
+    <nav>
+        <div class="positioning">Nav</div> 
+    </nav>
+<div class="container-small">
+    <header>
+        <div class="positioning">Header</div>
+    </header>
+    <div class="container-smaller">
+    <article>
+        <div class="positioning">Article</div>
+    </article>
+    <aside>
+        <div class="positioning">Aside</div> 
+    </aside>
+    </div>
+    <footer>
+        <div class="positioning">Footer</div>
+    </footer>
+</div>
+</div>
+</div>
+</body>
+</html>
